@@ -11,3 +11,6 @@ noremap <F3> :set invnumber<CR>
 inoremap <F3> <C-O>:set invnumber<CR>
 
 let g:user_emmet_leader_key=','
+
+set mouse=n
+set ttymouse=xterm2
