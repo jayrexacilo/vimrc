@@ -18,7 +18,8 @@ The awesome version includes a lot of great plugins, configurations and color sc
 
 	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
-	my config
+	
+	#### installation of my forked amix-vimrc
 	git clone --recurse-submodules --depth=1 https://github.com/jayrexacilo/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 	
