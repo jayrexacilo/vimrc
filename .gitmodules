@@ -1,0 +1,9 @@
+[submodule "my_plugins/dracula-theme"]
+	path = my_plugins/dracula-theme
+	url = https://github.com/dracula/vim.git
+[submodule "my_plugins/nerdtree-git-plugin"]
+	path = my_plugins/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "my_plugins/emmet-vim"]
+	path = my_plugins/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
