@@ -7,3 +7,9 @@
 [submodule "my_plugins/emmet-vim"]
 	path = my_plugins/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "my_plugins/jellybeans"]
+	path = my_plugins/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "my_plugins/vim-one"]
+	path = my_plugins/vim-one
+	url = https://github.com/rakr/vim-one.git
