@@ -16,3 +16,6 @@
 [submodule "my_plugins/vim-one"]
 	path = my_plugins/vim-one
 	url = https://github.com/rakr/vim-one.git
+[submodule "my_plugins/vim-todo-lists"]
+	path = my_plugins/vim-todo-lists
+	url = https://github.com/aserebryakov/vim-todo-lists.git

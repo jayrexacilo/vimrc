@@ -12,6 +12,10 @@ inoremap <F3> <C-O>:set invnumber<CR>
 
 noremap <F2> :GitGutterAll<CR>
 
+noremap <leader>`` :VimTodoListsCreateNewItem<CR>
+noremap <leader>`1 :VimTodoListsCreateNewItemBelow<CR>
+noremap <leader>` :VimTodoListsToggleItem<CR>
+
 noremap <leader>q :q<CR>
 
 let g:user_emmet_leader_key=','
