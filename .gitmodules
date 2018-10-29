@@ -7,3 +7,6 @@
 [submodule "my_plugins/emmet-vim"]
 	path = my_plugins/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "my_plugins/vim-gitgutter"]
+	path = my_plugins/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
