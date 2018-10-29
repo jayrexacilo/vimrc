@@ -12,6 +12,8 @@ inoremap <F3> <C-O>:set invnumber<CR>
 
 noremap <F2> :GitGutterAll<CR>
 
+noremap <leader>q :q<CR>
+
 let g:user_emmet_leader_key=','
 
 set mouse=n
