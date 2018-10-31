@@ -19,3 +19,6 @@
 [submodule "my_plugins/vim-todo-lists"]
 	path = my_plugins/vim-todo-lists
 	url = https://github.com/aserebryakov/vim-todo-lists.git
+[submodule "my_plugins/vim-javascript"]
+	path = my_plugins/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
