@@ -18,6 +18,8 @@ noremap <leader>` :VimTodoListsToggleItem<CR>
 
 noremap <leader>q :q<CR>
 
+noremap <leader>a `a
+
 let g:user_emmet_leader_key=','
 
 set mouse=n
