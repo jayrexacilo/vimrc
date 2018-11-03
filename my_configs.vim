@@ -24,3 +24,6 @@ let g:user_emmet_leader_key=','
 
 set mouse=n
 set ttymouse=xterm2
+
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
