@@ -20,6 +20,9 @@ noremap <leader>q :q<CR>
 
 noremap <leader>a `a
 
+" mappings for select All
+noremap zp ggvG$
+
 let g:user_emmet_leader_key=','
 
 set mouse=n
