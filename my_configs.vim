@@ -33,3 +33,31 @@ set rnu
 
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
+
+" ale lint
+let b:ale_linters = ['eslint']
+let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_completion_enabled = 1
+let g:ale_lint_on_text_changed = 'never'
+
+let g:airline#extensions#ale#enabled = 1
+
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
+set statusline=%{LinterStatus()}
+
+augroup FiletypeGroup
+    autocmd!
+    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+augroup END
