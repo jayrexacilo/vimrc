@@ -7,6 +7,8 @@ endif
 
 set nowrap
 
+let NERDTreeQuitOnOpen = 1
+
 noremap <F3> :set invnumber<CR>
 inoremap <F3> <C-O>:set invnumber<CR>
 
