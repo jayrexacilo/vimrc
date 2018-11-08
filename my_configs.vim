@@ -36,13 +36,19 @@ set rnu
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 
-" ale lint
+""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"                 ale lint for reactjs
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 let b:ale_linters = ['eslint']
 let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_completion_enabled = 1
-let g:ale_lint_on_text_changed = 'never'
-
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
+
+set statusline=%{LinterStatus()}
 
 function! LinterStatus() abort
     let l:counts = ale#statusline#Count(bufnr(''))
@@ -57,9 +63,18 @@ function! LinterStatus() abort
     \)
 endfunction
 
-set statusline=%{LinterStatus()}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
 
-augroup FiletypeGroup
-    autocmd!
-    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
-augroup END
+let g:ale_linters = {
+\   'javascript': ['eslint']
+\}
+
+let g:ale_pattern_options = {
+  \   '\.js$': {
+  \       'ale_linters': ['eslint'],
+  \       'ale_fixers': ['eslint'],
+  \   },
+  \}
