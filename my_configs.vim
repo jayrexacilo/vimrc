@@ -8,6 +8,7 @@ endif
 set nowrap
 
 let NERDTreeQuitOnOpen = 1
+let g:gitgutter_enabled = 1
 
 noremap <F3> :set invnumber<CR>
 inoremap <F3> <C-O>:set invnumber<CR>
@@ -24,6 +25,9 @@ noremap <leader>a `a
 
 " mappings for select All
 noremap zp ggvG$
+
+" mappings for open foldings
+noremap zpo ggvG$zO
 
 let g:user_emmet_leader_key=','
 
