@@ -83,3 +83,6 @@ let g:ale_pattern_options = {
   \       'ale_fixers': ['eslint'],
   \   },
   \}
+
+nmap <silent> <C-j> :ALENext<cr>
+nmap <silent> <C-k> :ALEPrevious<cr>
