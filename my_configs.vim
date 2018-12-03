@@ -10,6 +10,16 @@ set nowrap
 let NERDTreeQuitOnOpen = 1
 let g:gitgutter_enabled = 1
 
+" mappings for fugitive
+noremap [q :cnext<CR>
+noremap ]q :cprev<CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>gg :Ggrep<Space>
+nnoremap <space>gp :Gpush<Space>
+nnoremap <space>gm :Gcommit -m ''<Left>
+nnoremap <space>gam :Gcommit -am ''<Left>
+
 noremap <F3> :set invnumber<CR>
 inoremap <F3> <C-O>:set invnumber<CR>
 
