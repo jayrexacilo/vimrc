@@ -22,6 +22,7 @@ vnoremap $` <esc>`>a`<esc>`<i`<esc>
 noremap [q :cnext<CR>
 noremap ]q :cprev<CR>
 nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gr :Gread
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>gg :Ggrep<Space>
 nnoremap <space>gpp :Gpush
