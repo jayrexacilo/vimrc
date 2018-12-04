@@ -24,8 +24,8 @@ noremap ]q :cprev<CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>gg :Ggrep<Space>
-nnoremap <space>gp :Gpush<CR>
-nnoremap <space>gpp :Gpull<CR>
+nnoremap <space>gpp:Gpush<CR>
+nnoremap <space>gp :Gpull<CR>
 nnoremap <space>gm :Gcommit -m ''<Left>
 nnoremap <space>gam :Gcommit -am ''<Left>
 
