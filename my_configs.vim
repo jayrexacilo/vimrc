@@ -10,6 +10,13 @@ set nowrap
 let NERDTreeQuitOnOpen = 1
 let g:gitgutter_enabled = 1
 
+" Surround the visual selection
+vnoremap $( <esc>`>a)<esc>`<i(<esc>
+vnoremap $[ <esc>`>a]<esc>`<i[<esc>
+vnoremap ${ <esc>`>a}<esc>`<i{<esc>
+vnoremap $" <esc>`>a"<esc>`<i"<esc>
+vnoremap $' <esc>`>a'<esc>`<i'<esc>
+
 " mappings for fugitive
 noremap [q :cnext<CR>
 noremap ]q :cprev<CR>
