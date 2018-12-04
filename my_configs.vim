@@ -16,6 +16,7 @@ vnoremap $[ <esc>`>a]<esc>`<i[<esc>
 vnoremap ${ <esc>`>a}<esc>`<i{<esc>
 vnoremap $" <esc>`>a"<esc>`<i"<esc>
 vnoremap $' <esc>`>a'<esc>`<i'<esc>
+vnoremap $` <esc>`>a`<esc>`<i`<esc>
 
 " mappings for fugitive
 noremap [q :cnext<CR>
