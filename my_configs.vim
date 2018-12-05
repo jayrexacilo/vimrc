@@ -72,6 +72,8 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_linters_ignore = {'typescript': ['tslint']}
+let g:typescript_compiler_binary = 'tsc'
 
 set statusline=%{LinterStatus()}
 
