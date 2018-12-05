@@ -1,4 +1,4 @@
-syntax on 
+syntax on
 color dracula
 
 if !has('gui_running')
@@ -60,11 +60,11 @@ set rnu
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 
-""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 "                 ale lint for reactjs
 """""""""""""""""""""""""""""""""""""""""""""""""""
-let b:ale_linters = ['eslint']
-let b:ale_fixers = ['prettier', 'eslint']
+" let b:ale_linters = ['eslint']
+" let b:ale_fixers = ['prettier', 'eslint']
 let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
@@ -72,8 +72,8 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
-let g:ale_linters_ignore = {'typescript': ['tslint']}
-let g:typescript_compiler_binary = 'tsc'
+" let g:ale_linters_ignore = {'typescript': ['tslint']}
+" let g:typescript_compiler_binary = 'tsc'
 
 set statusline=%{LinterStatus()}
 
@@ -108,3 +108,4 @@ let g:ale_pattern_options = {
 
 nmap <silent> <C-j> :ALENext<cr>
 nmap <silent> <C-k> :ALEPrevious<cr>
+nnoremap <space>w :TsuQuickFix <CR>y<CR>
