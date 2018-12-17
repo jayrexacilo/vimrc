@@ -6,6 +6,9 @@ if !has('gui_running')
 endif
 
 set nowrap
+set tabstop=2
+set shiftwidth=0
+set visualbell
 
 let NERDTreeQuitOnOpen = 1
 let g:gitgutter_enabled = 1
