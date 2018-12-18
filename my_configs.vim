@@ -115,8 +115,6 @@ nmap <silent> <C-k> :ALEPrevious<cr>
 " Tsu configs
 nnoremap <space>w :TsuQuickFix <CR>y<CR>
 set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 
 " :WatchForChanges
 " If you are using a console version of Vim, or dealing
