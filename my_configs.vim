@@ -111,7 +111,11 @@ let g:ale_pattern_options = {
 
 nmap <silent> <C-j> :ALENext<cr>
 nmap <silent> <C-k> :ALEPrevious<cr>
+
+" Tsu configs
 nnoremap <space>w :TsuQuickFix <CR>y<CR>
+set completeopt=longest,menuone
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
 " :WatchForChanges
