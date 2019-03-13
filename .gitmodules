@@ -28,3 +28,6 @@
 [submodule "my_plugins/typescript-vim"]
 	path = my_plugins/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "my_plugins/vim-prettier"]
+	path = my_plugins/vim-prettier
+	url = https://github.com/prettier/vim-prettier
